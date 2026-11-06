@@ -26,6 +26,10 @@
     background-color: var(--subBg500);
     padding: 2.5rem;
     margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .port_item.p1 {
     background-color: var(--subBg100);
@@ -94,7 +98,8 @@
     border: 1px solid var(--black100);
     padding: 0.625rem 1.5rem;
     text-align: center;
-    margin-top: 1.8rem;
+
+    margin-top: auto;
 }
 
 @media (max-width: 800px) {
@@ -108,5 +113,9 @@
         width: 400px;
         height: auto;
         padding: 40px 30px;
+
+        .port_item a.img {
+            height: 180px; /* 모바일 화면에서의 사진 높이 조절 (선택사항) */
+        }
     }
 }
